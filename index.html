@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery | Fajrieee</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-family: cursive;
+        background-color: crimson;
+        color: white;
+    }
+
+    .wrapper {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .wrapper img {
+        width: 100%;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        transform: scale(0);
+        padding: 100px;
+    }
+
+    .overlay img {
+        width: 150%;
+    }
+
+    .overlay .close {
+        padding: 5px 10px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    .overlay:target {
+        right: 0;
+        bottom: 0;
+        transform: scale(1);
+    }
+
+    @media screen and (min-width: 900px) {
+        body {
+            font-size: 2rem;
+        }
+
+        .wrapper {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .overlay img {
+            width: 40%;
+        }
+    }
+</style>
+
+<body>
+    <h1>Image Gallery</h1>
+    <div class="wrapper">
+        <div>
+            <a href="#img-1">
+                <img src="img/1.jpg" alt="..">
+            </a>
+
+            <div class="overlay" id="img-1">
+                <a href="#" class="close">X</a>
+                <img src="img/1.jpg" alt="..">
+            </div>
+        </div>
+        <div>
+            <a href="#img-2">
+                <img src="img/2.jpg" alt="..">
+            </a>
+
+            <div class="overlay" id="img-2">
+                <a href="#" class="close">X</a>
+                <img src="img/2.jpg" alt="..">
+            </div>
+        </div>
+        <div>
+            <a href="#img-3">
+                <img src="img/3.jpg" alt="..">
+            </a>
+
+            <div class="overlay" id="img-3">
+                <a href="#" class="close">X</a>
+                <img src="img/3.jpg" alt="..">
+            </div>
+        </div>
+        <div>
+            <a href="#img-4">
+                <img src="img/4.jpg" alt="..">
+            </a>
+
+            <div class="overlay" id="img-4">
+                <a href="#" class="close">X</a>
+                <img src="img/4.jpg" alt="..">
+            </div>
+        </div>
+        <div>
+            <a href="#img-5">
+                <img src="img/5.jpg" alt="..">
+            </a>
+
+            <div class="overlay" id="img-5">
+                <a href="#" class="close">X</a>
+                <img src="img/5.jpg" alt="..">
+            </div>
+        </div>
+        <div>
+            <a href="#img-6">
+                <img src="img/6.jpg" alt="..">
+            </a>
+
+            <div class="overlay" id="img-6">
+                <a href="#" class="close">X</a>
+                <img src="img/6.jpg" alt="..">
+            </div>
+        </div>
+        <div>
+            <a href="#img-7">
+                <img src="img/7.jpg" alt="..">
+            </a>
+
+            <div class="overlay" id="img-7">
+                <a href="#" class="close">X</a>
+                <img src="img/7.jpg" alt="..">
+            </div>
+        </div>
+        <div>
+            <a href="#img-8">
+                <img src="img/8.jpg" alt="..">
+            </a>
+
+            <div class="overlay" id="img-8">
+                <a href="#" class="close">X</a>
+                <img src="img/8.jpg" alt="..">
+            </div>
+        </div>
+        <div>
+            <a href="#img-9">
+                <img src="img/9.jpg" alt="..">
+            </a>
+
+            <div class="overlay" id="img-9">
+                <a href="#" class="close">X</a>
+                <img src="img/9.jpg" alt="..">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
